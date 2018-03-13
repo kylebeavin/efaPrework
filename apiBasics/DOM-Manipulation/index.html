@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <body>
+        <!-- <h1>Hello World</h1>
+        <p id="testparagraph">sample text</p>
+        <p class="sampleclass">this paragraph has a class of "sampleclass"</p>
+        <button id="clickthisbutton" style="background-color: lightblue" >i want to be clicked</button> -->
+    <!--  -->
+        <!-- <script type="text/javascript">
+        // var x = 10;
+        // console.log(x);
+        document.getElementById('testparagraph').style.color = 'blue';
+        // console.log(document.getElementById('testparagraph').style.color = 'blue');
+        console.log(document.querySelectorAll('p.sampleclass'));
+        document.querySelectorAll("p.sampleclass")[0].innerHTML='<span>my text has changed <i>i am an all new element<i></span>';
+        // 
+        document.getElementById('clickthisbutton').addEventListener('click',(details) => {
+        /    console.log('i was clicked',details);
+            if (details.target.style.backgroundColor =='red')
+            details.target.style.backgroundColor ='lightblue'
+         else {
+            details.target.style.backgroundColor ='red'
+        }
+        })
+        </script> -->
+<label for="nameInput">Enter your name</label>
+<input type="text" id="nameInput" placeholder="Quincy Williams">
+<p>welcome</p>
+<p>no name has been entered</p>
+<script>
+    document.getElementById('nameInput').addEventListener('keyup',(event) =>{
+        //console.log(event);
+        //console.log(document.getElementsByTagName('p'));
+        if (event.target.value == ''){
+            document.getElementsByTagName('p')[1].innerText = 'no name has been entered';
+           }   else {
+
+                document.getElementsByTagName('p')[1].innerText = `everyone, please welcome ${event.target.value} to the stage!!`;
+            }
+    })
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
