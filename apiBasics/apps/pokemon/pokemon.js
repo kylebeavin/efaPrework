@@ -2,7 +2,7 @@
 const tHead = document.getElementById("tHead");
 const tBody = document.getElementById("tBody");
 const searchPoke = document.getElementById("searchPoke");
-let checks = [];
+let pokename = [];
 
 //API VARIABLES
 const baseURL = 'https://pokeapi.co/api/v2/pokemon/';

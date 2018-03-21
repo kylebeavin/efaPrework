@@ -43,7 +43,8 @@ function fetchResults(e) { //1
         url += '&endDate=' + endDate.value;
     };
     //end conditionals
-    fetch(url).then(function(result){
+    fetch(url)
+    .then(function(result){
         return result.json();
     }).then(function(json){
         displayResults(json)
