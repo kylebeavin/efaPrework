@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header, nav, div, aside, article, footer {
+    padding: 30px;
+}
+
+header {
+    border: solid;
+    position: absolute;
+}
+
+nav {
+    border: solid;
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+div {
+    border: solid;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+aside {
+    border: solid;
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+article {
+    border: solid;
+}
+
+footer {
+    border: solid;
+    clear: both;
+}
